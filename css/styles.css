@@ -129,6 +129,15 @@ img {
 .main-title {
   background-color: var(--primary-navyblue-color);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1688947200&Signature=J2PSzLafE1nrU4sep9KM1Txg5JbjKGQyQAp-Vyuhk6XJRszsOsaehCDSqa-g3E1sWuiHX0JZZQTDutNKGZfGRIoCsd1v3I9pad4y9BWzoreQDFIuR2TBLKNIorfN6VMk1SubxeuHESne87KM2hcYwbvw3j4sAiRMWZUqROQZgtkKUNYis4UVj0bszjAZfgZ8iVNtvasZOMt2IqSGmWDoiH0IGcAWa3UH3QDcozOeMCgtCbZCMItJa3pJMFcJE3Gwfk8GbTRMdCWSVtkfHTGGmPAK7P7SklpFvIWTRKibrC30SH3f8cug8DQspK63A7f49m66Wwvy~XHjedIABM4-og__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 .solutions-logo {
   max-width: 496px;
@@ -284,6 +293,7 @@ img {
 .li-people {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .personal-name {
   padding: 32px 16px;
