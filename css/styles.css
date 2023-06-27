@@ -1,0 +1,316 @@
+:root {
+  --primary-white-color: #ffffff;
+  --primary-blue-color: #4d5ae5;
+  --primary-navyblue-color: #2e2f42;
+  --primary-slate-color: #434455;
+  --primary-cloud-color: #f4f4fd;
+  --primary-ocean-color: #404bbf;
+  --primary-cornflower-color: #e7e9fc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-slate-color);
+  background-color: var(--primary-white-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  display: block;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.top-head {
+  border-bottom: 1px solid #e7e9fc;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  color: var(--primary-blue-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.span-logo {
+  color: var(--primary-navyblue-color);
+}
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+.pages {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-navyblue-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.pages:hover,
+.pages:focus {
+  color: var(--primary-ocean-color);
+}
+.address .list {
+  font-style: normal;
+}
+
+.communicate {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-slate-color);
+}
+.communicate:hover,
+.communicate:focus {
+  color: var(--primary-ocean-color);
+}
+.link {
+  text-decoration: none;
+}
+.main-title {
+  background-color: var(--primary-navyblue-color);
+  padding: 188px 0;
+}
+.solutions-logo {
+  max-width: 496px;
+  margin-bottom: 48px;
+}
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+.button {
+  background-color: var(--primary-blue-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--primary-ocean-color);
+}
+.title-features {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-navyblue-color);
+  margin-bottom: 8px;
+}
+.paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-slate-color);
+}
+.title-about {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-navyblue-color);
+  margin-bottom: 72px;
+}
+.team-section {
+  background-color: var(--primary-cloud-color);
+  padding: 120px 0;
+}
+
+.name-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-navyblue-color);
+  text-align: center;
+  margin-bottom: 8px;
+}
+.our-team-background {
+  background-color: var(--primary-white-color);
+}
+.team-activity {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-slate-color);
+  text-align: center;
+}
+.foot-background {
+  background-color: var(--primary-navyblue-color);
+  padding: 100px 0;
+}
+.foot-logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--primary-blue-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.foot-logo-studio {
+  color: var(--primary-cloud-color);
+}
+.foot-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-cloud-color);
+  max-width: 264px;
+}
+.portfolio-butt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-blue-color);
+  cursor: pointer;
+  background-color: var(--primary-cloud-color);
+  padding: 12px 24px;
+  border: 1px solid var(--primary-cornflower-color);
+  border-radius: 4px;
+}
+.portfolio-butt:hover,
+.portfolio-butt:focus {
+  border: 1px solid transparent;
+  color: var(--primary-white-color);
+  background-color: var(--primary-ocean-color);
+}
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-navyblue-color);
+  margin-bottom: 8px;
+}
+.portfolio-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-slate-color);
+}
+.main-about {
+  padding: 120px 0;
+}
+.list-about {
+  display: flex;
+  gap: 24px;
+}
+.li-about {
+  width: calc((100% - 72px) / 4);
+}
+.main-doing {
+  padding-bottom: 120px;
+}
+.li-photo {
+  width: calc((100% - 48px) / 3);
+}
+.li-people {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.personal-name {
+  padding: 32px 16px;
+}
+.portfolio-main {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.portfolio-list-butt {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin-top: 0;
+}
+.work-list {
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-photo {
+  padding: 32px 16px;
+  border: 1px solid var(--primary-cornflower-color);
+  border-top: none;
+}
