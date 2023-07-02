@@ -119,18 +119,6 @@ img {
   color: var(--primary-ocean-color);
   border-radius: 2px;
 }
-.pages.pasive::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--primary-ocean-color);
-  color: var(--primary-ocean-color);
-  border-radius: 2px;
-}
 
 .pages:hover,
 .pages:focus {
