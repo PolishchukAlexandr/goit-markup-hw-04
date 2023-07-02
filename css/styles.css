@@ -6,7 +6,7 @@
   --primary-cloud-color: #f4f4fd;
   --primary-ocean-color: #404bbf;
   --primary-cornflower-color: #e7e9fc;
-  --primary--color: ;
+  --primary-light-slate-color: #8e8f99;
 }
 
 body {
@@ -98,6 +98,7 @@ img {
   list-style: none;
 }
 .pages {
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -106,6 +107,31 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.pages.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-ocean-color);
+  color: var(--primary-ocean-color);
+  border-radius: 2px;
+}
+.pages.pasive::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-ocean-color);
+  color: var(--primary-ocean-color);
+  border-radius: 2px;
+}
+
 .pages:hover,
 .pages:focus {
   color: var(--primary-ocean-color);
@@ -128,17 +154,18 @@ img {
   text-decoration: none;
 }
 .main-title {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: var(--primary-navyblue-color);
   padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1688947200&Signature=J2PSzLafE1nrU4sep9KM1Txg5JbjKGQyQAp-Vyuhk6XJRszsOsaehCDSqa-g3E1sWuiHX0JZZQTDutNKGZfGRIoCsd1v3I9pad4y9BWzoreQDFIuR2TBLKNIorfN6VMk1SubxeuHESne87KM2hcYwbvw3j4sAiRMWZUqROQZgtkKUNYis4UVj0bszjAZfgZ8iVNtvasZOMt2IqSGmWDoiH0IGcAWa3UH3QDcozOeMCgtCbZCMItJa3pJMFcJE3Gwfk8GbTRMdCWSVtkfHTGGmPAK7P7SklpFvIWTRKibrC30SH3f8cug8DQspK63A7f49m66Wwvy~XHjedIABM4-og__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
 }
 .solutions-logo {
   max-width: 496px;
@@ -363,4 +390,61 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-light-slate-color);
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  margin-bottom: 120px;
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--primary-ocean-color);
+}
+.clients-icon {
+  fill: var(--primary-light-slate-color);
+}
+.clients-link:hover {
+  border-color: var(--primary-ocean-color);
+}
+.company-title {
+  margin-top: 120px;
+}
+.foot-logo-container {
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% 50%;
+  background-color: var(--primary-blue-color);
+  width: 40px;
+  height: 40px;
+}
+.foot-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-social {
+  width: 96px;
+  height: 24px;
+  top: 100px;
+  left: 540px;
+}
+.foot-icon {
+  position: relative;
+  top: 8px;
+  left: 8px;
 }
