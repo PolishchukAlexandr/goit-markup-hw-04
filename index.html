@@ -54,7 +54,9 @@
           <h1 class="solutions-logo title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="main-about">
@@ -415,12 +417,15 @@
       </div>
     </footer>
     <!--Модальне вікно-->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <svg class="modal-icon" width="8px" height="8px">
-          <use href="./images/symbol-defs.svg#x-icon"></use>
-        </svg>
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8px" height="8px">
+            <use href="./images/symbol-defs.svg#x-icon"></use>
+          </svg>
+        </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
