@@ -426,12 +426,11 @@ img {
   align-items: center;
 }
 .foot-social {
-  width: 96px;
-  height: 24px;
-  top: 100px;
-  left: 540px;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-start;
 }
-.foot-icon {
+.footer-icon {
   position: relative;
   top: 8px;
   left: 8px;
