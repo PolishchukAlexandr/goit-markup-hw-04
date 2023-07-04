@@ -521,7 +521,7 @@ img {
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
-  transform: translateY(50%) translateX(-50%);
+  transform: translateY(50%) translateX(50%);
 }
 .modal-icon {
   width: 8px;
