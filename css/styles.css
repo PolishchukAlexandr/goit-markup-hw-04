@@ -241,44 +241,7 @@ img {
   color: var(--primary-slate-color);
   text-align: center;
 }
-/*Footer*/
-.foot-container {
-  display: flex;
-  align-items: baseline;
-}
-.div-logo {
-  margin-right: 120px;
-}
-.foot-background {
-  background-color: var(--primary-navyblue-color);
-  padding: 100px 0;
-}
-.foot-logo {
-  font-family: "Raleway", sans-serif;
-  color: var(--primary-blue-color);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.foot-logo-studio {
-  color: var(--primary-cloud-color);
-}
-.foot-paragraph {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-cloud-color);
-  max-width: 264px;
-  margin-bottom: 16px;
-}
-.foot-list-container {
-  display: flex;
-  width: 40px;
-  height: 40px;
-}
+
 .portfolio-butt {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -291,13 +254,22 @@ img {
   padding: 12px 24px;
   border: 1px solid var(--primary-cornflower-color);
   border-radius: 4px;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-butt:hover,
 .portfolio-butt:focus {
   border: 1px solid transparent;
   color: var(--primary-white-color);
   background-color: var(--primary-ocean-color);
+  box-shadow: зі значенням 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-link-cart {
+  display: block;
+}
+.portfolio-link-cart:hover {
+  box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-title {
   font-weight: 500;
@@ -427,14 +399,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50% 50%;
   background-color: var(--primary-blue-color);
   width: 100%;
   height: 100%;
   overflow: visible;
-  bottom: 32px;
-  margin-top: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -498,27 +467,65 @@ img {
   margin-top: 120px;
   margin-bottom: 72px;
 }
-.foot-logo-container {
-  justify-content: center;
-  align-items: center;
-  border-radius: 50% 50%;
-  background-color: var(--primary-blue-color);
+/*Foter*/
+.foot-container {
+  display: flex;
+  align-items: baseline;
+}
+.div-logo {
+  margin-right: 120px;
+}
+.foot-background {
+  background-color: var(--primary-navyblue-color);
+  padding: 100px 0;
+}
+.foot-logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--primary-blue-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.foot-logo-studio {
+  color: var(--primary-cloud-color);
+}
+.foot-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-cloud-color);
+  max-width: 264px;
+  margin-bottom: 16px;
+}
+.foot-list-container {
+  display: flex;
+  gap: 16px;
+}
+.footer-list-icon {
   width: 40px;
   height: 40px;
-  margin-top: 16px;
+}
+.foot-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50% 50%;
+  background-color: var(--primary-blue-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.foot-list-container {
-  gap: 16px;
+.foot-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
-.foot-social {
-}
+
 .footer-icon {
-  position: relative;
+  fill: var(--primary-cloud-color);
   top: 8px;
   left: 8px;
 }
@@ -526,9 +533,7 @@ img {
 .foot-logo-.container:focus {
   background-color: var(--primary-green-color);
 }
-.footer-social-container {
-  transform: translateX(0) translateY(-138%);
-}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -536,7 +541,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms ease-out, visibility 250ms ease-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -548,15 +554,16 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%) scale(1);
   stroke: var(--primary-navyblue-color);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background-color: var(--primary-dairy-color);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transition: opacity 300ms ease-out 250ms, transform 300ms ease-out 250ms,
+  transition: opacity 300ms ease-out 250ms,
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
     rotate 300ms ease-out 250ms;
 }
 .backdrop.is-hidden .modal {
@@ -566,6 +573,11 @@ img {
 .modal-icon {
   width: 8px;
   height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: var(--primary-white-color);
 }
 .modal-btn {
   display: flex;
@@ -576,11 +588,21 @@ img {
   right: 24px;
   width: 24px;
   height: 24px;
+  padding: 0;
   flex-shrink: 0;
-  border-radius: 24px;
+  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-cornflower-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-btn:focus,
+.modal-btn:hover {
+  background-color: var(--primary-ocean-color);
+  border: none;
+  fill: var(--primary-white-color);
+}
+
 .modal-btn:active {
   background-color: var(--primary-ocean-color);
 }
