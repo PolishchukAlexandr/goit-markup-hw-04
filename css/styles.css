@@ -413,9 +413,6 @@ img {
 }
 .team-icon {
   fill: var(--primary-cloud-color);
-
-  top: 12px;
-  left: 12px;
 }
 .section {
   padding-top: 120px;
