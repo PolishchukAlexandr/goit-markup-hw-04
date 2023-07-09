@@ -539,7 +539,7 @@ img {
   left: 8px;
 }
 .foot-logo-container:hover,
-.foot-logo-.container:focus {
+.foot-logo-container:focus {
   background-color: var(--primary-green-color);
 }
 
