@@ -460,8 +460,8 @@ img {
   margin-bottom: 120px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--primary-ocean-color);
   color: var(--primary-ocean-color);
 }
@@ -472,7 +472,6 @@ img {
   border-color: var(--primary-ocean-color);
 }
 .company-title {
-  margin-top: 120px;
   margin-bottom: 72px;
 }
 /*Foter*/
