@@ -503,8 +503,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
   max-width: 264px;
-  font-weight: 500;
-  margin-bottom: 16px;
 }
 .foot-list-container {
   display: flex;
